@@ -57,51 +57,18 @@ print(moto1)
 
 # ejercicio con poo # 3 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
-class Producto:
-    def __init__(self,nombre,precio,stock):
+class persona :
+    def __init__(self, nombre, edad, membresia):
         self.nombre = nombre
-        self.precio = precio 
-        self.stock =stock
-        
-    def mostrar_infromacion(self):
-        return f"nombre del cliente {self.nombre} el precio del producto es: {self.precio} el stock del profucto es: {self.stock}"
-    def actualizar_stock(self,cantidad):
-        if self.stock >= cantidad:
-            self.stock -= cantidad
-            return True
+        self.edad = edad
+        self.membresia = True
+    def __str__(self):
+        return f"El nombre es: {self.nombre}, la edad es: {self.edad}, la membresia es: {self.membresia}"
+    def pueden_entrar(self):
+        if self.edad >= 18 and self.membresia == True:
+            print(f"{self.nombre} puede entrar al parque")
         else:
-            print(f"no hay suficionete stockde {self.nombre}.")
-            return False
+            print(f"{self.nombre} no puede entrar al parque")
 
-class Carrito:
-    def __init__(self,lista_de_productos_anadidos =None):
-        self.lista_de_productos_anadidos = lista_de_productos_anadidos or []
-    
-    def agregar_producto_al_carrito(self ,producto,cantidad):
-        print(f"agregaste un nuevo producto al carrito {self.agregar_producto_al_carrito}")
-    
-    def mostrar_productos(self):
-        """Muestra los productos en el carrito."""
-        if not self.lista_de_productos_anadidos:
-            print("El carrito está vacío.")
-        else:
-            print("Productos en el carrito:")
-            for producto, cantidad in self.lista_de_productos_anadidos:
-                print(f"{cantidad}x {producto.nombre} - ${producto.precio * cantidad}")
-
-    def calcular_total(self):
-        """Calcula el total a pagar de los productos en el carrito."""
-        total = sum(producto.precio * cantidad for producto, cantidad in self.lista_de_productos_anadidos)
-        print(f"Total a pagar: ${total}")
-        
-producto1 = Producto("Camiseta", 20, 5)
-producto2 = Producto("Zapatos", 50, 2)
-producto3 = Producto("Gorra", 15, 10)
-
-carrito = Carrito()
-
-carrito.agregar_producto(producto1, 2)
-carrito.agregar_producto(producto2, 1)
-carrito.agregar_producto(producto3, 3)
-
-carrito.mostrar_carrito()
+persona1= persona("bryan",21,"si")
+print(persona1)
