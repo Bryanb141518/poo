@@ -36,18 +36,35 @@
 #         print(f"La fruta {mes} se cosecha en {mes}, que pertenece a la estación {estacion}.")
 # else:
 #     print("dato no es valido")
-try:
-    calificacion =  int(input("ingrese su calificacion entre 0 y 100: "))
+# try:
+#     calificacion =  int(input("ingrese su calificacion entre 0 y 100: "))
+#
+#     if calificacion >= 90:
+#         print("A exelente")
+#     elif calificacion >= 80 and calificacion < 90:
+#         print("B muy bien")
+#     elif calificacion >= 70 and calificacion < 80:
+#         print("C  bien")
+#     elif calificacion >= 60 and calificacion < 70:
+#         print("D  sificiente")
+#     elif calificacion < 60:
+#         print("F  insuficiente")
+# except ValueError:
+#     print("ingrese una notta valida")
 
-    if calificacion >= 90:
-        print("A exelente")
-    elif calificacion >= 80 and calificacion < 90:
-        print("B muy bien")
-    elif calificacion >= 70 and calificacion < 80:
-        print("C  bien")
-    elif calificacion >= 60 and calificacion < 70:
-        print("D  sificiente")
-    elif calificacion < 60:
-        print("F  insuficiente")
-except ValueError:
-    print("ingrese una notta valida")
+# nota = int(input("ingrese su nota numero entre el 0 y el 100: "))
+# asistencias = int(input("ingrese su asistencias un numero entre 0 y 100: "))
+#
+# if nota < 60 and asistencias < 50:
+#     print("F")
+# elif nota >= 60 and asistencias >= 50:
+#     print("D")
+# elif nota >= 70 and asistencias >= 60:
+#     print("C")
+# elif nota >= 80 and asistencias >= 70:
+#     print("B")
+# elif nota >= 90 and asistencias >= 80:
+#     print("A")
+#
+
+
